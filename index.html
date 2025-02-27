@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Adivina el numero </p>
-    <input type="number" id="display" value="0">
-    <input type="button" value="Intro" onclick="adivina()">
-    <input type="button" value="Reset" onclick="nuevo()">
-    <p id="texto"></p>
-    <p id="numero"></p>
+    <div class="container">
+        <h1>Adivina el Número</h1>
+        <p>Introduce un número entre 0 y 99:</p>
+        <input type="number" id="display" min="0" max="99" placeholder="Tu número">
+        <button onclick="adivina()">Intentar</button>
+        <button onclick="nuevo()">Reiniciar</button>
+        <p id="texto"></p>
+        <p id="intentos">Intentos restantes: 5</p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
